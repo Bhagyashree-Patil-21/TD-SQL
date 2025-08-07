@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS duplicates (
+CREAT TABLE IF NOT EXISTS duplicates (
     table_name_source VARCHAR(255),
     count_of_duplicates INT,
     col_1 VARCHAR(255), col_2 VARCHAR(255), col_3 VARCHAR(255), col_4 VARCHAR(255), col_5 VARCHAR(255),
