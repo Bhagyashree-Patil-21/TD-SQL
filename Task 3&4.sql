@@ -47,3 +47,10 @@ FROM Feed3
 GROUP BY col_1, col_2, col_3, col_4, col_5, col_6, col_7, col_8, col_9, col_10,
     col_11, col_12, col_13, col_14, col_15, col_16, col_17, col_18, col_19, col_20
 HAVING COUNT(*) > 1;
+
+SELECT *
+INTO OUTFILE 'duplicates_output.csv'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+FROM duplicates;
